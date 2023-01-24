@@ -17,7 +17,13 @@ const About = () => {
                     <p>Hi. I'm Tomi, nice to meet you. Please take a look around</p>
                 </div>
                 <div>
-                    <p> I'm a versatile front-end developer passionate about technology. I've been developing and working on projects with my skills in Javascript programming using framework such as React. I'm curious about technology, passionate about solving problems and enjoy learning new skills. When i'm not coding, i'm probably hanging out with my husband, being entertained by our amazing 1 year old little boy.</p>
+                    <p> I'm a versatile front-end developer passionate about technology. 
+    I've been developing and working on projects with my skills in Javascript programming using framework such as React. 
+      Whether working as a member of a team or going solo into the wild, I am always fueled by the idea or challenge currently 
+    in front of me until a solution is brought to life. 
+    I'm curious about technology, passionate about solving problems and enjoy learning new skills. 
+    If not in my code editor, i'll most likely be found in the gym, streching my muscles or hanging out with my husband
+    being entertained by our amazing 2 year old little boy.</p>
                 </div>
                 </div>
             
