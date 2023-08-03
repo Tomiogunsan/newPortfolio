@@ -1,8 +1,8 @@
 import React from "react";
 import coin from "../assets/coin-tracker.jpg";
 import Trybo from "../assets/Trybo.png";
-import fashion from "../assets/fashion.jpg";
-import power from "../assets/power2.jpg";
+import zest from "../assets/zest.png";
+import mpi from "../assets/mpi.png";
 import mtj from "../assets/mtj.png";
 import coffee from "../assets/coffee2.jpg";
 
@@ -29,9 +29,9 @@ const Work = () => {
 
     {
       id: 4,
-      src: fashion,
-      demo: "https://magnificent-kleicha-102f4c.netlify.app",
-      code: "https://github.com/Tomiogunsan/Fashion-website",
+      src: zest,
+      demo: "https://zest.prunedge.org/",
+     
     },
     {
       id: 5,
@@ -42,9 +42,9 @@ const Work = () => {
 
     {
       id: 6,
-      src: power,
-      demo: "https://stalwart-kulfi-8cb0b5.netlify.app",
-      code: "https://github.com/Tomiogunsan/power-list-task",
+      src: mpi,
+      demo: "https://staging.nigeriapovertymap.com/dimensions/education",
+      
     },
   ];
   return (
@@ -77,11 +77,13 @@ const Work = () => {
                     Demo
                   </button>
                 </a>
-                <a href={item.code} target="_blank" rel="noreferrer">
-                  <button className="w-[65%] px-6 py-3 m-4 duration-200 hover:scale-105 font-bold hover:bg-yellow-600 ">
-                    Code
-                  </button>
-                </a>
+                {item.id !== 4 && item.id !== 6 && (
+                  <a href={item.code} target="_blank" rel="noreferrer">
+                    <button className="w-[65%] px-6 py-3 m-4 duration-200 hover:scale-105 font-bold hover:bg-yellow-600 ">
+                      Code
+                    </button>
+                  </a>
+                )}
               </div>
             </div>
           ))}
