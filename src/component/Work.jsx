@@ -31,7 +31,6 @@ const Work = () => {
       id: 4,
       src: zest,
       demo: "https://zest.prunedge.org/",
-     
     },
     {
       id: 5,
@@ -44,7 +43,6 @@ const Work = () => {
       id: 6,
       src: mpi,
       demo: "https://staging.nigeriapovertymap.com/dimensions/education",
-      
     },
   ];
   return (
