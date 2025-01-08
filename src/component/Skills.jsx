@@ -57,6 +57,14 @@ const Skills = () => {
             <img className="w-[100px] mx-auto " src={sass} alt="sass" />
             <p className="my-4">SASS</p>
           </div>
+          <div className="shadow-md shadow-[#001] hover:scale-110 duration-500">
+            <img
+              className="w-[100px] mx-auto "
+              src="/nodejs.png"
+              alt="nodejs"
+            />
+            <p className="my-4">Node Js</p>
+          </div>
         </div>
       </div>
     </div>

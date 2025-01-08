@@ -1,48 +1,40 @@
 import React from "react";
-import coin from "../assets/coin-tracker.jpg";
-import Trybo from "../assets/Trybo.png";
-import zest from "../assets/zest.png";
-import mpi from "../assets/mpi.png";
-import mtj from "../assets/mtj.png";
+
 import coffee from "../assets/coffee2.jpg";
 
 const Work = () => {
   const work = [
     {
       id: 1,
-      src: coin,
-      demo: "https://crypto-tracker-sx1k.vercel.app/",
-      code: "https://github.com/Tomiogunsan/crypto-tracker",
+      src: "/taskManagementAdmin.png",
+      demo: "https://task-management-app-frontend-eta.vercel.app/",
+      code: "https://github.com/Tomiogunsan/task-management-app-frontend",
     },
     {
       id: 2,
-      src: Trybo,
-      demo: "https://trybo-project.vercel.app/",
-      code: "https://github.com/Tomiogunsan/Trybo-Project",
+      src: "/productPage.png",
+      demo: "https://product-page-green-ten.vercel.app/",
+      code: "https://github.com/Tomiogunsan/product-page",
     },
     {
       id: 3,
-      src: mtj,
-      demo: "https://mtj.vercel.app/",
-      code: "https://github.com/Tomiogunsan/MTJ",
+      src: "/verificationPin.png",
+      demo: "https://zojatech-assessment.vercel.app/verify-otp",
+      code: "https://github.com/Tomiogunsan/TokenInput",
     },
 
     {
       id: 4,
-      src: zest,
-      demo: "https://zest.prunedge.org/",
-    },
-    {
-      id: 5,
       src: coffee,
       demo: "https://sparkly-taffy-84748f.netlify.app",
       code: "https://github.com/Tomiogunsan/MockUpCoffee",
     },
 
     {
-      id: 6,
-      src: mpi,
-      demo: "https://staging.nigeriapovertymap.com/dimensions/education",
+      id: 5,
+      src: "/taskManagement.png",
+      demo: "https://task-management-app-frontend-eta.vercel.app/",
+      code: "https://github.com/Tomiogunsan/task-management-app-frontend",
     },
   ];
   return (
@@ -75,7 +67,7 @@ const Work = () => {
                     Demo
                   </button>
                 </a>
-                {item.id !== 4 && item.id !== 6 && (
+                {item.id !== 4 && (
                   <a href={item.code} target="_blank" rel="noreferrer">
                     <button className="w-[65%] px-6 py-3 m-4 duration-200 hover:scale-105 font-bold hover:bg-yellow-600 ">
                       Code

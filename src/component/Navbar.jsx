@@ -16,42 +16,42 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center shadow-black px-4 bg-[#18191b]'>
+    <div className="fixed w-full h-[80px] flex justify-between items-center shadow-black px-4 bg-[#18191b]">
       <div>
-        <img src={Logo} alt='Logo ' style={{ width: '50px' }} />
+        <img src={Logo} alt="Logo " style={{ width: "50px" }} />
       </div>
 
       {/* menu */}
-      <ul className='hidden md:flex text-[#f4f4f4]'>
+      <ul className="hidden md:flex text-[#f4f4f4]">
         <li>
-        <Link  to="home"  smooth={true}  duration={500}>
-          Home
-        </Link>
-          </li>
+          <Link to="home" smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
         <li>
-          <Link  to="about"  smooth={true}  duration={500}>
-          About
-        </Link>
-           </li>
+          <Link to="about" smooth={true} duration={500}>
+            About
+          </Link>
+        </li>
         <li>
-        <Link  to="skills"  smooth={true}  duration={500}>
-          Skills
-        </Link>
-            </li>
+          <Link to="skills" smooth={true} duration={500}>
+            Skills
+          </Link>
+        </li>
         <li>
-        <Link  to="work"  smooth={true}  duration={500}>
-          Work
-        </Link>
-          </li>
+          <Link to="work" smooth={true} duration={500}>
+            Work
+          </Link>
+        </li>
         <li>
-        <Link  to="contact"  smooth={true}  duration={500}>
-          Contact
-        </Link>
-          </li>
+          <Link to="contact" smooth={true} duration={500}>
+            Contact
+          </Link>
+        </li>
       </ul>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className='md:hidden z-10 text-[#f4f4f4]'>
+      <div onClick={handleClick} className="md:hidden z-10 text-[#f4f4f4]">
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -59,73 +59,74 @@ const Navbar = () => {
       <ul
         className={
           !nav
-            ? 'hidden'
-            : 'absolute top-0 left-0 w-full h-screen bg-[#18191b] text-[#f4f4f4] flex flex-col justify-center items-center'
+            ? "hidden"
+            : "absolute top-0 left-0 w-full h-screen bg-[#18191b] text-[#f4f4f4] flex flex-col justify-center items-center"
         }
-       >
-        <li className='py-6 text-4xl'>
-        <Link onClick={handleClick} to="home"  smooth={true}  duration={500}>
-          Home
-        </Link>
-           
+      >
+        <li className="py-6 text-4xl">
+          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+            Home
+          </Link>
         </li>
-        <li className='py-6 text-4xl'>
-          {' '}
-          
-          <Link onClick={handleClick} to="about"  smooth={true}  duration={500}>
-          About
-        </Link>
-         
+        <li className="py-6 text-4xl">
+          {" "}
+          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+            About
+          </Link>
         </li>
-        <li className='py-6 text-4xl'>
-          {' '}
-          <Link onClick={handleClick} to="skills"  smooth={true}  duration={500}>
-          Skills
-        </Link>
-            </li>
-        <li className='py-6 text-4xl'>
-          {' '}
-          <Link onClick={handleClick} to="work"  smooth={true}  duration={500}>
-          Work
-        </Link>
-            </li>
-        <li className='py-6 text-4xl'>
-          {' '}
-          <Link onClick={handleClick} to="contact"  smooth={true}  duration={500}>
-          Contact
-        </Link>
-       </li>
+        <li className="py-6 text-4xl">
+          {" "}
+          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
+            Skills
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          {" "}
+          <Link onClick={handleClick} to="work" smooth={true} duration={500}>
+            Work
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          {" "}
+          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+            Contact
+          </Link>
+        </li>
       </ul>
 
       {/* Social icons */}
-      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#F1B007]'>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#F1B007]">
             <a
-              className='flex justify-between items-center w-full text-[#f4f4f4]'
-              href='https://www.linkedin.com/in/tomi-ogunsan-546320101/' target="_blank" rel="noreferrer"
+              className="flex justify-between items-center w-full text-[#f4f4f4]"
+              href="https://www.linkedin.com/in/tomi-ogunsan-546320101/"
+              target="_blank"
+              rel="noreferrer"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#000]'>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#000]">
             <a
-              className='flex justify-between items-center w-full text-[#f4f4f4]'
-              href='https://github.com/Tomiogunsan' target="_blank" rel="noreferrer"
+              className="flex justify-between items-center w-full text-[#f4f4f4]"
+              href="https://github.com/Tomiogunsan"
+              target="_blank"
+              rel="noreferrer"
             >
               Github <FaGithub size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#F1B007]'>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#F1B007]">
             <a
-              className='flex justify-between items-center w-full text-[#f4f4f4]'
-              href='https://twitter.com/Pretomia2' target="_blank" rel="noreferrer"
+              className="flex justify-between items-center w-full text-[#f4f4f4]"
+              href="https://x.com/Pretomia2"
+              target="_blank"
+              rel="noreferrer"
             >
               Twitter <FaTwitterSquare size={30} />
             </a>
           </li>
-          
-     
         </ul>
       </div>
     </div>
