@@ -19,7 +19,7 @@ const Work = () => {
     {
       id: 3,
       src: "/verificationPin.png",
-      demo: "https://zojatech-assessment.vercel.app/verify-otp",
+      demo: "https://www.npmjs.com/package/input-token",
       code: "https://github.com/Tomiogunsan/TokenInput",
     },
 
